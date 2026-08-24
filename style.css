@@ -104,6 +104,19 @@
       padding: 24px;
       overflow-x: auto;
     }
+    .project-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-weight: 700;
+      margin-bottom: 18px;
+      transition: color .2s ease, transform .2s ease;
+    }
+    .project-back span { font-size: 1.35rem; line-height: 1; }
+    .project-back:hover,
+    .project-back:focus-visible { color: var(--text); transform: translateX(-3px); }
+    .project-back:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 4px; }
     pre { margin: 0; color: #dce5ee; font-family: "SFMono-Regular", Consolas, monospace; font-size: .9rem; line-height: 1.7; }
     .project-detail { margin-top: 40px; }
     .placeholder {
