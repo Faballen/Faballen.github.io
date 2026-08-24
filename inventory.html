@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Inventory and Revenue Tracker — Android inventory management application." />
+  <title>Inventory and Revenue Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <a class="logo" href="index.html#top">FAT</a>
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section>
+      <div class="container">
+        <div class="project-detail card">
+          <span class="eyebrow">02 — Inventory and Revenue Tracker</span>
+          <h2 class="section-title">Inventory and Revenue Tracker</h2>
+          <p class="section-intro">
+            An inventory management Android application that allows users to create and
+            manage item listings, track inventory costs and quantities, record sales,
+            and automatically calculate profit or loss.
+          </p>
+
+          <h3>Architecture</h3>
+          <div class="architecture">
+<pre>
+                +---------------------+
+                |     Android App     |
+                |   Jetpack Compose   |
+                +----------+----------+
+                           | HTTPS
+                           v
+                +---------------------+
+                |     Spring Boot     |
+                |       REST API      |
+                +----------+----------+
+                           |
+                           v
+                +---------------------+
+                |      PostgreSQL     |
+                | Inventory and Sales |
+                +---------------------+
+
+        Android App ---------> Item and Sales Data
+        Spring Boot ----------> Profit and Loss Calculations
+</pre>
+          </div>
+
+          <h3>Technology</h3>
+          <div class="grid split">
+            <div>
+              <strong>Android</strong>
+              <ul>
+                <li>Kotlin</li>
+                <li>Jetpack Compose</li>
+                <li>Coroutines / Flow</li>
+                <li>MVVM / UDF</li>
+                <li>Retrofit / OkHttp</li>
+                <li>Photo capture and upload</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Backend & Data</strong>
+              <ul>
+                <li>Spring Boot</li>
+                <li>REST API</li>
+                <li>PostgreSQL</li>
+                <li>Inventory management</li>
+                <li>Sales tracking</li>
+                <li>Profit and loss calculations</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3>Application Screenshots</h3>
+          <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+            <div><img src="inventory-Shots/invent-home.png" alt="Inventory Home Screen" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="inventory-Shots/add-items.png" alt="Add Item Screen" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="inventory-Shots/editItem.png" alt="Edit Item Screen" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="inventory-Shots/delete.png" alt="Delete Item Screen" style="width: 100%; border-radius: 8px;"></div>
+          </div>
+
+          <h3>Features</h3>
+          <ul>
+            <li>Create and manage item listings with costs, quantities, categories, and conditions.</li>
+            <li>Capture or upload photos for inventory items.</li>
+            <li>Record sales and automatically calculate profit or loss.</li>
+            <li>View detailed inventory, sales history, and individual sales details.</li>
+          </ul>
+
+          <div class="actions">
+            <a class="button primary" href="#" onclick="alert('Add your Inventory Tracker GitHub URL here.'); return false;">GitHub</a>
+            <a class="button" href="#" onclick="alert('Add your live demo URL here.'); return false;">Live Demo</a>
+            <a class="button" href="index.html#projects">Back to Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Fabrice Allen portfolio.</div>
+  </footer>
+</body>
+</html>
