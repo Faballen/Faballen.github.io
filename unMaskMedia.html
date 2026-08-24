@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UnmaskMedia — AI-powered media verification platform." />
+  <title>UnmaskMedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <a class="logo" href="index.html#top">FAT</a>
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section>
+      <div class="container">
+        <div class="project-detail card">
+          <span class="eyebrow">01 — UnmaskMedia</span>
+          <h2 class="section-title">AI Media Verification Platform</h2>
+          <p class="section-intro">
+            A multi-service application designed to analyze uploaded media and return
+            an AI-assisted verification result.
+          </p>
+
+          <h3>Architecture</h3>
+          <div class="architecture">
+<pre>
+                ┌─────────────────────┐
+                │   Android App       │
+                │   Jetpack Compose.  |
+                |   CameraX           |
+                |   MediaPipe Face    |
+                |   Landmarker        |       
+                └──────────┬──────────┘
+                           │ HTTPS
+                           ▼
+                ┌─────────────────────┐
+                │     Spring Boot     │
+                │       REST API      │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │     AI Service      │
+                │ DeepfakeDetectionAPI│
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │   Detection Result  │
+                └─────────────────────┘
+
+        Spring Boot ───────► PostgreSQL
+        Spring Boot ───────► Object Storage
+</pre>
+          </div>
+
+          <h3>Technology</h3>
+          <div class="grid split">
+            <div>
+              <strong>Android</strong>
+              <ul>
+                <li>Kotlin</li>
+                <li>Auth0</li>
+                <li>Jetpack Compose</li>
+                <li>Coroutines / Flow</li>
+                <li>MVVM / UDF</li>
+                <li>Retrofit / OkHttp</li>
+                <li>CameraX + MediaPipe Face Landmarker</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Backend & AI</strong>
+              <ul>
+                <li>Kotlin / Spring Boot</li>
+                <li>DeepfakeDetectionAPI</li>
+                <li>PostgreSQL</li>
+            
+              </ul>
+            </div>
+          </div>
+
+          <h3>Application Screenshots</h3>
+          <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+            
+
+            <div><img src="SnapShots-UnMaskMedia/login.png" alt="Login Screen" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="SnapShots-UnMaskMedia/login_validation.png" alt="Login Validation" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="SnapShots-UnMaskMedia/signUpValidation.png" alt="Sign Up Validation" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="SnapShots-UnMaskMedia/signUpValidaton02.png" alt="Sign Up Validation 02" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="SnapShots-UnMaskMedia/SignUpValidation3.png" alt="Sign Up Validation 3" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="SnapShots-UnMaskMedia/signUpValid4.png" alt="Sign Up Valid 4" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="SnapShots-UnMaskMedia/homeScreen.png" alt="Home Screen" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="SnapShots-UnMaskMedia/history.png" alt="History Screen" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="SnapShots-UnMaskMedia/profileScreen.png" alt="Profile Screen" style="width: 100%; border-radius: 8px;"></div>
+          </div>
+
+          <h3>Engineering Focus</h3>
+          <ul>
+            <li>Separate mobile, API, and AI responsibilities into independent services.</li>
+            <li>Use Spring Boot as the application/business layer between the Android client and AI service.</li>
+            <li>Keep media processing isolated from the core backend.</li>
+        
+          </ul>
+
+          <div class="actions">
+            <a class="button primary" href="#" onclick="alert('Add your UnmaskMedia GitHub URL here.'); return false;">GitHub</a>
+            <a class="button" href="#" onclick="alert('Add your live demo URL here.'); return false;">Live Demo</a>
+            <a class="button" href="index.html#projects">Back to Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Fabrice Allen. Built as a static portfolio.</div>
+  </footer>
+</body>
+</html>
