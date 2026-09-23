@@ -38,25 +38,22 @@
           <h3>Architecture</h3>
           <div class="architecture">
 <pre>
-                +---------------------+
-                |     Android App     |
-                |   Jetpack Compose   |
-                +----------+----------+
-                           | HTTPS
-                           v
-                +---------------------+
-                |     Spring Boot     |
-                |       REST API      |
-                +----------+----------+
+                +-----------------------+
+                | UI Layer              |
+                |   UI Elements         | 
+                |   State Holders(VM)   |
+                +----------+------------+
+                           | 
                            |
-                           v
-                +---------------------+
-                |      PostgreSQL     |
-                | Inventory and Sales |
-                +---------------------+
+                +-------------------------+
+                |Data Layer               | 
+                |   Repositories          |
+                |   Room Database         |
+                |   Data Access Objects   |
+                +-------------------------+
 
         Android App ---------> Item and Sales Data
-        Spring Boot ----------> Profit and Loss Calculations
+        Room Database ----------> Profit and Loss Calculations
 </pre>
           </div>
 
@@ -69,29 +66,31 @@
                 <li>Jetpack Compose</li>
                 <li>Coroutines / Flow</li>
                 <li>MVVM / UDF</li>
-                <li>Retrofit / OkHttp</li>
+                <li>Material Design 3</li>
                 <li>Photo capture and upload</li>
               </ul>
             </div>
             <div>
               <strong>Backend & Data</strong>
               <ul>
-                <li>Spring Boot</li>
+                <li>Room Database</li>
                 <li>REST API</li>
-                <li>PostgreSQL</li>
-                <li>Inventory management</li>
-                <li>Sales tracking</li>
-                <li>Profit and loss calculations</li>
+                <li>Bitmap</li>
+                <li>AI & Machine Learning (Google Gemini API)</li>
+                <li>Multi-Modal Vision AI</li>
               </ul>
             </div>
           </div>
 
           <h3>Application Screenshots</h3>
           <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-            <div><img src="inventory-Shots/invent-home.png" alt="Inventory Home Screen" style="width: 100%; border-radius: 8px;"></div>
-            <div><img src="inventory-Shots/add-items.png" alt="Add Item Screen" style="width: 100%; border-radius: 8px;"></div>
-            <div><img src="inventory-Shots/editItem.png" alt="Edit Item Screen" style="width: 100%; border-radius: 8px;"></div>
-            <div><img src="inventory-Shots/delete.png" alt="Delete Item Screen" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="inventory-Shots/homeShot1.png" alt="Home Screen1" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="inventory-Shots/homeShot2.png" alt="Home Screen2" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="inventory-Shots/homeShot3.png" alt="Home Screen3" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="inventory-Shots/homeShot4.png" alt="Home Screen4" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="inventory-Shots/homeShot5.png" alt="Home Screen5" style="width: 100%; border-radius: 8px;"></div>
+            <div><img src="inventory-Shots/homeShot6.png" alt="Home Screen6" style="width: 100%; border-radius: 8px;"></div>
+            
           </div>
 
           <h3>Features</h3>
@@ -104,7 +103,6 @@
 
           <div class="actions">
             <a class="button primary" href="#" onclick="alert('Add your Inventory Tracker GitHub URL here.'); return false;">GitHub</a>
-            <a class="button" href="#" onclick="alert('Add your live demo URL here.'); return false;">Live Demo</a>
             <a class="button" href="index.html#projects">Back to Projects</a>
           </div>
         </div>
